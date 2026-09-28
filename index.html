@@ -3,341 +3,368 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KNH Digital — Project Management & Digital Delivery</title>
-<meta name="description" content="KNH Digital is a PMP-led managed-delivery partner: project management, website design & management, and digital & social media management, run on real scopes and schedules.">
+<title>KNH Digital — Project Management, IT Migration &amp; Website Services</title>
+<meta name="description" content="KNH Digital helps small businesses and growing teams get projects done: part-time project management, IT migration and upgrade management, process and documentation, and website and online presence. Book a free 20-minute call.">
+<link rel="canonical" href="https://knhdigital.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root { --accent: #E5231D; --ink: #171B22; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: #FFFFFF; font-family: 'Public Sans', system-ui, sans-serif; color: #12151B; }
-  a { color: inherit; text-decoration: none; }
-  img { max-width: 100%; }
-  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 30px; border-radius: 6px; font-size: 15px; font-weight: 700; }
-  .wrap { width: 100%; max-width: 1440px; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; }
-  .nav { display: flex; align-items: center; justify-content: space-between; padding: 26px 88px; background: var(--ink); flex-wrap: wrap; gap: 16px; }
-  .nav-links { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; }
-  .nav-links a { font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85); }
-  .nav-right { display: flex; align-items: center; gap: 18px; }
-  .svc-grid { padding: 40px 88px 90px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
-  .why-row { display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; }
-  .test-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; }
-  .footer-grid { padding: 64px 88px 40px; background: var(--ink); display: flex; justify-content: space-between; gap: 60px; flex-wrap: wrap; }
-  .cta-row { padding: 80px 88px; background: var(--accent); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-  .px { padding-left: 88px; padding-right: 88px; }
-  h1 { margin: 0; font-size: 52px; line-height: 1.2; font-weight: 800; color: #FFFFFF; max-width: 780px; }
-  @media (max-width: 900px) {
-    .px, .nav, .footer-grid, .cta-row, .svc-grid { padding-left: 24px; padding-right: 24px; }
-    .nav-links { display: none; }
-    .nav-right > div:first-child { display: none; }
-    h1 { font-size: 34px; }
-    .svc-grid, .test-grid { grid-template-columns: 1fr; }
-    .footer-grid { flex-direction: column; }
-  }
+:root { --accent: #E5231D; --ink: #171B22; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #FFFFFF; font-family: 'Public Sans', system-ui, sans-serif; color: #12151B; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 15px 30px; border-radius: 6px; font-size: 15px; font-weight: 700; }
+.wrap { width: 100%; max-width: 1440px; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 26px 88px; background: var(--ink); flex-wrap: wrap; gap: 16px; }
+.nav-links { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; }
+.nav-links a { font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85); }
+.nav-right { display: flex; align-items: center; gap: 18px; }
+.svc-grid { padding: 40px 88px 40px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.svc-card { display: flex; flex-direction: column; gap: 14px; padding: 30px; background: #FFFFFF; border: 1px solid #E2E4E8; border-radius: 10px; }
+.svc-icon { width: 56px; height: 56px; border-radius: 10px; background: rgba(229,35,29,0.1); display: flex; align-items: center; justify-content: center; }
+.svc-card h3 { margin: 0; font-size: 21px; font-weight: 800; }
+.svc-card .sum { margin: 0; font-size: 15px; line-height: 1.6; color: #12151B; }
+.svc-card .inc-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #171B22; }
+.svc-card ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.65; color: #5B6572; }
+.svc-card .price { margin-top: auto; padding-top: 14px; border-top: 1px solid #E2E4E8; font-size: 15px; font-weight: 800; color: var(--accent); }
+.why-row { display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; }
+.test-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; }
+.footer-grid { padding: 64px 88px 40px; background: var(--ink); display: flex; justify-content: space-between; gap: 60px; flex-wrap: wrap; }
+.cta-row { padding: 80px 88px; background: var(--accent); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.px { padding-left: 88px; padding-right: 88px; }
+h1 { margin: 0; font-size: 52px; line-height: 1.2; font-weight: 800; color: #FFFFFF; max-width: 780px; }
+@media (max-width: 900px) {
+.px, .nav, .footer-grid, .cta-row, .svc-grid { padding-left: 24px; padding-right: 24px; }
+.nav-links { display: none; }
+.nav-right > div:first-child { display: none; }
+h1 { font-size: 34px; }
+.svc-grid, .test-grid { grid-template-columns: 1fr; }
+.svc-card { padding: 24px; }
+.footer-grid { flex-direction: column; }
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- NAV -->
-  <div class="nav">
-    <div style="display: flex; align-items: center; gap: 12px;">
-      <svg width="26" height="26" viewBox="0 0 120 120" fill="none">
-        <path d="M4 30 L4 4 L30 4" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <path d="M116 30 L116 4 L90 4" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <path d="M4 90 L4 116 L30 116" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <rect x="86" y="86" width="30" height="30" rx="7" fill="var(--accent)"/>
-      </svg>
-      <div>
-        <div style="font-size: 19px; font-weight: 800; color: #FFFFFF; letter-spacing: 0.01em; line-height: 1;">KNH DIGITAL</div>
-        <div style="font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 0.04em;">PROJECT MANAGEMENT &amp; DELIVERY</div>
-      </div>
-    </div>
-    <div class="nav-links">
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact Us</a>
-    </div>
-    <div class="nav-right">
-      <div style="text-align: right;">
-        <div style="font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5);">GET CONSULTATION</div>
-        <div style="font-size: 14px; font-weight: 700; color: #FFFFFF;">(703) 953-6820</div>
-      </div>
-      <a href="#contact" class="btn" style="background: var(--accent); color: #FFFFFF;">Get Started</a>
-    </div>
-  </div>
+<!-- NAV -->
+<div class="nav">
+<div style="display: flex; align-items: center; gap: 12px;">
+<svg width="26" height="26" viewBox="0 0 120 120" fill="none">
+<path d="M4 30 L4 4 L30 4" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M116 30 L116 4 L90 4" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M4 90 L4 116 L30 116" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="86" y="86" width="30" height="30" rx="7" fill="var(--accent)"/>
+</svg>
+<div>
+<div style="font-size: 19px; font-weight: 800; color: #FFFFFF; letter-spacing: 0.01em; line-height: 1;">KNH DIGITAL</div>
+<div style="font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: 0.04em;">PROJECT MANAGEMENT &amp; DELIVERY</div>
+</div>
+</div>
+<div class="nav-links">
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#work">Why Us</a>
+<a href="#contact">Contact Us</a>
+</div>
+<div class="nav-right">
+<div style="text-align: right;">
+<div style="font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5);">GET CONSULTATION</div>
+<div style="font-size: 14px; font-weight: 700; color: #FFFFFF;">(703) 953-6820</div>
+</div>
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--accent); color: #FFFFFF;">Book a Call</a>
+</div>
+</div>
 
-  <!-- HERO -->
-  <div class="px" style="background: var(--ink); padding-top: 110px; padding-bottom: 100px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px;">
-    <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Welcome to KNH Digital</div>
-    <h1>A managed-delivery partner that knows how to ship your project on time</h1>
-    <p style="margin: 0; font-size: 16.5px; line-height: 1.7; color: rgba(255,255,255,0.65); max-width: 560px;">
-      Our approach is simple &mdash; PMP-led project management, disciplined scheduling, and clear reporting,
-      applied to website builds, ongoing site management, and social media management.
-    </p>
-    <div style="display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; justify-content: center;">
-      <a href="#contact" class="btn" style="background: var(--accent); color: #FFFFFF;">Contact Us</a>
-      <a href="#services" style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: #FFFFFF;">
-        <div style="width: 42px; height: 42px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-        </div>
-        See Our Services
-      </a>
-    </div>
-  </div>
+<!-- HERO -->
+<div class="px" style="background: var(--ink); padding-top: 110px; padding-bottom: 100px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Welcome to KNH Digital</div>
+<h1>A managed-delivery partner that knows how to ship your project on time</h1>
+<p style="margin: 0; font-size: 16.5px; line-height: 1.7; color: rgba(255,255,255,0.65); max-width: 600px;">
+We help small businesses and growing teams get projects done &mdash; PMP-led project management, IT migrations
+and upgrades, clear documentation, and websites that work.
+</p>
+<div style="display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; justify-content: center; align-items: center;">
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--accent); color: #FFFFFF;">Book a free 20-minute call</a>
+<a href="#services" style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: #FFFFFF;">
+<div style="width: 42px; height: 42px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+</div>
+See our services
+</a>
+</div>
+</div>
 
-  <!-- ABOUT -->
-  <div id="about" class="px" style="background: #FFFFFF; padding-top: 100px; padding-bottom: 100px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;">
-    <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">About <span style="color: var(--accent);">KNH Digital</span></div>
-    <h2 style="margin: 0; font-size: 34px; font-weight: 800; line-height: 1.3; color: #12151B; max-width: 640px;">
-      Our goal is to run your project the way a certified PM runs their own.
-    </h2>
-    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #5B6572; max-width: 480px;">We provide the structure to keep your project on schedule.</p>
-    <div style="display: flex; gap: 48px; margin-top: 20px; flex-wrap: wrap; justify-content: center; text-align: left; max-width: 720px;">
-      <div style="display: flex; gap: 14px; align-items: flex-start; max-width: 320px;">
-        <div style="width: 34px; height: 34px; flex-shrink: 0; color: var(--accent);">
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        </div>
-        <div>
-          <div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">One Accountable PM</div>
-          <div style="font-size: 14px; color: #5B6572; line-height: 1.6;">PMP- and Scrum-certified delivery &mdash; not a handoff between subcontractors.</div>
-        </div>
-      </div>
-      <div style="display: flex; gap: 14px; align-items: flex-start; max-width: 320px;">
-        <div style="width: 34px; height: 34px; flex-shrink: 0; color: var(--accent);">
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg>
-        </div>
-        <div>
-          <div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">Quality Service</div>
-          <div style="font-size: 14px; color: #5B6572; line-height: 1.6;">Every engagement runs on a real scope, schedule, and status you can see.</div>
-        </div>
-      </div>
-    </div>
-    <a href="#services" class="btn" style="margin-top: 12px; background: var(--accent); color: #FFFFFF;">More About Us</a>
-  </div>
+<!-- ABOUT -->
+<div id="about" class="px" style="background: #FFFFFF; padding-top: 100px; padding-bottom: 100px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">About <span style="color: var(--accent);">KNH Digital</span></div>
+<h2 style="margin: 0; font-size: 34px; font-weight: 800; line-height: 1.3; color: #12151B; max-width: 640px;">
+Our goal is to run your project the way a certified PM runs their own.
+</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #5B6572; max-width: 520px;">We provide the structure to keep your project on schedule, with no surprises.</p>
+<div style="display: flex; gap: 48px; margin-top: 20px; flex-wrap: wrap; justify-content: center; text-align: left; max-width: 720px;">
+<div style="display: flex; gap: 14px; align-items: flex-start; max-width: 320px;">
+<div style="width: 34px; height: 34px; flex-shrink: 0; color: var(--accent);">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">One Accountable PM</div>
+<div style="font-size: 14px; color: #5B6572; line-height: 1.6;">PMP- and Scrum-certified delivery &mdash; not a handoff between subcontractors.</div>
+</div>
+</div>
+<div style="display: flex; gap: 14px; align-items: flex-start; max-width: 320px;">
+<div style="width: 34px; height: 34px; flex-shrink: 0; color: var(--accent);">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg>
+</div>
+<div>
+<div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">Quality Service</div>
+<div style="font-size: 14px; color: #5B6572; line-height: 1.6;">Every engagement runs on a real scope, schedule, and status you can see.</div>
+</div>
+</div>
+</div>
+<a href="#services" class="btn" style="margin-top: 12px; background: var(--accent); color: #FFFFFF;">See our services</a>
+</div>
 
-  <!-- CREDENTIALS STRIP -->
-  <div class="px" style="padding-top: 40px; padding-bottom: 40px; background: var(--accent); display: flex; flex-direction: column; gap: 16px;">
-    <div style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #FFFFFF;">Certified &amp; Credentialed</div>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-        <div style="font-size: 14px; font-weight: 700; color: #171B22;">PMP</div>
-      </div>
-      <div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-        <div style="font-size: 14px; font-weight: 700; color: #171B22;">Scrum Master</div>
-      </div>
-      <div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-        <div style="font-size: 14px; font-weight: 700; color: #171B22;">CompTIA Security+</div>
-      </div>
-      <div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-        <div style="font-size: 14px; font-weight: 700; color: #171B22;">Azure AZ-104</div>
-      </div>
-      <div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-        <div style="font-size: 14px; font-weight: 700; color: #171B22;">ITIL v4</div>
-      </div>
-    </div>
-  </div>
+<!-- CREDENTIALS STRIP -->
+<div class="px" style="padding-top: 40px; padding-bottom: 40px; background: var(--accent); display: flex; flex-direction: column; gap: 16px;">
+<div style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #FFFFFF;">Team Credentials</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+<div style="font-size: 14px; font-weight: 700; color: #171B22;">PMP</div>
+</div>
+<div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+<div style="font-size: 14px; font-weight: 700; color: #171B22;">Scrum Master</div>
+</div>
+<div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+<div style="font-size: 14px; font-weight: 700; color: #171B22;">ITIL 4</div>
+</div>
+<div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+<div style="font-size: 14px; font-weight: 700; color: #171B22;">CompTIA Security+</div>
+</div>
+<div style="background: #FFFFFF; border-radius: 999px; padding: 9px 16px; display: flex; align-items: center; gap: 7px;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+<div style="font-size: 14px; font-weight: 700; color: #171B22;">M.S. Cybersecurity</div>
+</div>
+</div>
+</div>
 
-  <!-- SERVICES -->
-  <div id="services" class="px" style="padding-top: 90px; padding-bottom: 30px; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center;">
-    <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Our Services</div>
-    <h2 style="margin: 0; font-size: 36px; font-weight: 800;">What Service We Offer</h2>
-    <p style="margin: 0; font-size: 15.5px; color: #5B6572; max-width: 560px; line-height: 1.7;">
-      One managed practice, two delivery lanes &mdash; run with the same discipline whether the deliverable is a
-      website or a content calendar.
-    </p>
-  </div>
+<!-- SERVICES -->
+<div id="services" class="px" style="padding-top: 90px; padding-bottom: 10px; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Our Services</div>
+<h2 style="margin: 0; font-size: 36px; font-weight: 800;">Services</h2>
+<p style="margin: 0; font-size: 15.5px; color: #5B6572; max-width: 640px; line-height: 1.7;">
+Project management and digital services for small businesses and growing teams. Our work is led by a
+PMP-certified project manager with years of experience running infrastructure projects for a federal agency.
+</p>
+</div>
 
-  <div class="svc-grid">
-    <div style="display: flex; flex-direction: column; gap: 16px; padding: 8px;">
-      <div style="width: 64px; height: 64px; border-radius: 10px; background: rgba(229,35,29,0.1); display: flex; align-items: center; justify-content: center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18"/><path d="M8 3v3"/><path d="M16 3v3"/></svg>
-      </div>
-      <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent);">The umbrella</div>
-      <h3 style="margin: 0; font-size: 21px; font-weight: 800;">Project Management</h3>
-      <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">
-        PMP- and Scrum-led delivery for digital and technical projects &mdash; scope, schedule, stakeholders, and
-        risk, on every engagement below, including AI strategy work.
-      </p>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 16px; padding: 8px;">
-      <div style="width: 64px; height: 64px; border-radius: 10px; background: rgba(229,35,29,0.1); display: flex; align-items: center; justify-content: center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="var(--accent)"/><circle cx="9" cy="6.5" r="0.6" fill="var(--accent)"/></svg>
-      </div>
-      <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent);">Sub-service</div>
-      <h3 style="margin: 0; font-size: 21px; font-weight: 800;">Website Design &amp; Management</h3>
-      <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">
-        Design and build on a managed timeline, then ongoing upkeep &mdash; content updates, hosting, security
-        patching &mdash; so the site keeps working after launch.
-      </p>
-      <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 8px;">
-        <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #171B22;">Website Delivery</div>
-        <ul style="margin: 0; padding-left: 18px; font-size: 13.5px; line-height: 1.6; color: #5B6572;">
-          <li>Setup (domain, hosting, site structure)</li>
-          <li>Design &amp; build (pages, content, mobile-responsive)</li>
-          <li>Launch &amp; handoff (testing, go-live, walkthrough)</li>
-        </ul>
-      </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 16px; padding: 8px;">
-      <div style="width: 64px; height: 64px; border-radius: 10px; background: rgba(229,35,29,0.1); display: flex; align-items: center; justify-content: center;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><circle cx="18" cy="5" r="2.4"/><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="19" r="2.4"/><path d="M8.2 10.8 15.8 6.2M8.2 13.2l7.6 4.6"/></svg>
-      </div>
-      <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent);">Sub-service</div>
-      <h3 style="margin: 0; font-size: 21px; font-weight: 800;">Digital &amp; Social Media Management</h3>
-      <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">
-        Planned content calendars, scheduled posting, and account management across the platforms your audience
-        is actually on &mdash; run with the same cadence and reporting as any managed project.
-      </p>
-      <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 8px;">
-        <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: #171B22;">Social Media Delivery</div>
-        <ul style="margin: 0; padding-left: 18px; font-size: 13.5px; line-height: 1.6; color: #5B6572;">
-          <li>Setup (profile, highlights, pinned posts)</li>
-          <li>7&ndash;14 day content pack (reels/TikTok + feed + stories)</li>
-          <li>Optional ongoing posting</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="svc-grid">
 
-  <!-- AI STRATEGY NOTE -->
-  <div class="px" style="padding-bottom: 90px;">
-    <div style="display: flex; align-items: center; gap: 24px; padding: 30px 34px; background: #F5F5F6; border-radius: 8px; border-left: 4px solid var(--accent); flex-wrap: wrap;">
-      <div style="width: 42px; height: 42px; flex-shrink: 0; border-radius: 8px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8"><path d="M12 2l2.2 5.6L20 10l-5.8 2.4L12 18l-2.2-5.6L4 10l5.8-2.4z"/></svg>
-      </div>
-      <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #12151B; flex: 1; min-width: 220px;">
-        <strong>AI Strategy</strong> is one of the engagements we run under Project Management &mdash; not a
-        separate practice. It's scoped, scheduled, and delivered the same way everything else here is.
-      </p>
-    </div>
-  </div>
+<div class="svc-card">
+<div class="svc-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18"/><path d="M8 3v3"/><path d="M16 3v3"/><path d="M7 13h4M7 16h7"/></svg>
+</div>
+<h3>Part-time project management</h3>
+<p class="sum">A certified project manager for your project, a few hours a week, without a full-time hire.</p>
+<div class="inc-label">Includes</div>
+<ul>
+<li>Project plan, schedule and milestones</li>
+<li>Weekly status reports (on track, at risk, blocked)</li>
+<li>Risk and issue tracking</li>
+<li>Vendor and stakeholder coordination</li>
+<li>AI adoption and tool rollout projects</li>
+</ul>
+<div class="price">Quoted after a free call</div>
+</div>
 
-  <!-- WHY CHOOSE US -->
-  <div id="work" class="px" style="background: var(--ink); padding-top: 90px; padding-bottom: 90px; display: flex; flex-direction: column; gap: 36px; align-items: center; text-align: center;">
-    <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Why Choose Us</div>
-      <h2 style="margin: 0; font-size: 34px; font-weight: 800; color: #FFFFFF; max-width: 640px;">We Provide Real Structure For Your Real Deadlines</h2>
-      <p style="margin: 0; font-size: 15px; color: rgba(255,255,255,0.6); max-width: 600px; line-height: 1.7;">
-        Whether it's a site build, a content calendar, or a technical strategy engagement, our approach is the
-        same: scope it, schedule it, run it, report on it.
-      </p>
-    </div>
-    <div class="why-row">
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-        <div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 15px; font-weight: 800;">PMP</div>
-        <div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Certified PM</div>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-        <div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 14px; font-weight: 800;">SCRUM</div>
-        <div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Agile Delivery</div>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-        <div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 13px; font-weight: 800;">ITIL v4</div>
-        <div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Service Mgmt</div>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-        <div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 12px; font-weight: 800;">SEC+</div>
-        <div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Security</div>
-      </div>
-    </div>
-    <a href="#contact" class="btn" style="background: var(--accent); color: #FFFFFF;">Start Consultation</a>
-  </div>
+<div class="svc-card">
+<div class="svc-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="2" y="4" width="8" height="6" rx="1"/><rect x="14" y="14" width="8" height="6" rx="1"/><path d="M6 10v4a2 2 0 0 0 2 2h6"/><path d="M12 13l2 3-2 3"/></svg>
+</div>
+<h3>IT migration and upgrade management</h3>
+<p class="sum">We plan and coordinate system moves and upgrades so they go live on time.</p>
+<div class="inc-label">Includes</div>
+<ul>
+<li>Migration plan and cutover schedule</li>
+<li>ITIL-based change management and approvals</li>
+<li>Vendor and technical team coordination</li>
+<li>Downtime and communication planning</li>
+<li>Status reporting through go-live</li>
+</ul>
+<div class="price">Quoted after a free call</div>
+</div>
 
-  <!-- TESTIMONIALS -->
-  <div class="px" style="padding-top: 90px; padding-bottom: 90px; display: flex; flex-direction: column; gap: 40px; align-items: center;">
-    <div style="text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center;">
-      <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Clients Feedback</div>
-      <h2 style="margin: 0; font-size: 32px; font-weight: 800;">Our Clients Reviews</h2>
-    </div>
-    <div class="test-grid">
-      <div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
-          <div>
-            <div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
-            <div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
-          </div>
-        </div>
-      </div>
-      <div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
-          <div>
-            <div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
-            <div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
-          </div>
-        </div>
-      </div>
-      <div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
-        <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
-          <div>
-            <div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
-            <div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="svc-card">
+<div class="svc-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+</div>
+<h3>Process and documentation</h3>
+<p class="sum">Runbooks, procedures, trackers and status reports your team will actually use.</p>
+<div class="inc-label">Includes</div>
+<ul>
+<li>Runbooks and standard operating procedures</li>
+<li>Project trackers and dashboards (Excel or Notion)</li>
+<li>Status report and meeting recap templates</li>
+<li>One round of revisions</li>
+</ul>
+<div class="price">From $750</div>
+</div>
 
-  <!-- CTA -->
-  <div id="contact" class="cta-row">
-    <div style="max-width: 560px; display: flex; flex-direction: column; gap: 10px;">
-      <h2 style="margin: 0; font-size: 30px; font-weight: 800; color: #FFFFFF;">Still deciding? Get a free consultation.</h2>
-      <p style="margin: 0; font-size: 15px; color: rgba(255,255,255,0.85);">Tell us about the project you need managed &mdash; no obligation.</p>
-    </div>
-    <a href="mailto:info@knhdigital.com" class="btn" style="background: var(--ink); color: #FFFFFF;">Get Consultation</a>
-  </div>
+<div class="svc-card">
+<div class="svc-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="var(--accent)"/><circle cx="9" cy="6.5" r="0.6" fill="var(--accent)"/></svg>
+</div>
+<h3>Website and online presence</h3>
+<p class="sum">A clean, fast website and a professional online presence, built and kept up to date by our team.</p>
+<div class="inc-label">Includes</div>
+<ul>
+<li>Mobile-friendly site, up to 5 pages</li>
+<li>Contact or lead-capture form</li>
+<li>Basic SEO and Google Business Profile setup</li>
+<li>Social media profile setup</li>
+<li>Optional monthly updates and management</li>
+</ul>
+<div class="price">From $1,500 &middot; Monthly management available</div>
+</div>
 
-  <!-- FOOTER -->
-  <div class="footer-grid">
-    <div style="display: flex; flex-direction: column; gap: 16px; max-width: 320px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <svg width="24" height="24" viewBox="0 0 120 120" fill="none">
-          <path d="M4 30 L4 4 L30 4" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <path d="M116 30 L116 4 L90 4" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <path d="M4 90 L4 116 L30 116" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <rect x="86" y="86" width="30" height="30" rx="8" fill="var(--accent)"/>
-        </svg>
-        <div style="font-size: 17px; font-weight: 800; color: #FFFFFF;">KNH DIGITAL</div>
-      </div>
-      <p style="margin: 0; font-size: 13.5px; color: rgba(255,255,255,0.55); line-height: 1.6;">A managed-delivery partner that knows how to ship your project on time.</p>
-      <div style="display: flex; gap: 10px; margin-top: 4px;">
-        <a href="#" style="width: 34px; height: 34px; border-radius: 6px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12 2.2c2.7 0 3 0 4.1.06 1 .05 1.6.22 2 .37.5.2.9.44 1.3.83.4.4.63.8.83 1.3.15.4.32 1 .37 2 .05 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.05 1-.22 1.6-.37 2a3.5 3.5 0 0 1-.83 1.3 3.5 3.5 0 0 1-1.3.83c-.4.15-1 .32-2 .37-1.1.05-1.4.06-4.1.06s-3 0-4.1-.06c-1-.05-1.6-.22-2-.37a3.5 3.5 0 0 1-1.3-.83 3.5 3.5 0 0 1-.83-1.3c-.15-.4-.32-1-.37-2C2.2 15 2.2 14.7 2.2 12s0-3 .06-4.1c.05-1 .22-1.6.37-2 .2-.5.44-.9.83-1.3.4-.4.8-.63 1.3-.83.4-.15 1-.32 2-.37C7.9 2.2 8.2 2.2 12 2.2zm0 1.8c-2.6 0-2.9 0-4 .06-.8.04-1.3.17-1.6.28-.4.16-.68.34-.97.63-.3.3-.47.57-.63.97-.1.3-.24.8-.28 1.6-.06 1.1-.06 1.4-.06 4s0 2.9.06 4c.04.8.17 1.3.28 1.6.16.4.34.68.63.97.3.3.57.47.97.63.3.1.8.24 1.6.28 1.1.06 1.4.06 4 .06s2.9 0 4-.06c.8-.04 1.3-.17 1.6-.28.4-.16.68-.34.97-.63.3-.3.47-.57.63-.97.1-.3.24-.8.28-1.6.06-1.1.06-1.4.06-4s0-2.9-.06-4c-.04-.8-.17-1.3-.28-1.6a2.6 2.6 0 0 0-.63-.97 2.6 2.6 0 0 0-.97-.63c-.3-.1-.8-.24-1.6-.28-1.1-.06-1.4-.06-4-.06zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.4-2.7a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/></svg>
-        </a>
-        <a href="#" style="width: 34px; height: 34px; border-radius: 6px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9.5 9H13v1.7h.06c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.6V21h-4v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21h-4z"/></svg>
-        </a>
-      </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-      <div style="font-size: 15px; font-weight: 700; color: #FFFFFF;">Quick Links</div>
-      <div style="width: 24px; height: 2px; background: var(--accent);"></div>
-      <a href="#about" style="font-size: 14px; color: rgba(255,255,255,0.6);">About Us</a>
-      <a href="#services" style="font-size: 14px; color: rgba(255,255,255,0.6);">Services</a>
-      <a href="#contact" style="font-size: 14px; color: rgba(255,255,255,0.6);">Contact</a>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 280px;">
-      <div style="font-size: 15px; font-weight: 700; color: #FFFFFF;">Get Consultation</div>
-      <div style="width: 24px; height: 2px; background: var(--accent);"></div>
-      <a href="mailto:info@knhdigital.com" class="btn" style="background: var(--accent); color: #FFFFFF; width: fit-content;">Get Consultation</a>
-      <div style="font-size: 13px; color: rgba(255,255,255,0.5);">KNH Digital LLC &middot; Arlington, VA</div>
-    </div>
-  </div>
-  <div style="padding: 20px 24px; background: #12151B; text-align: center; font-size: 12.5px; color: rgba(255,255,255,0.4);">
-    Copyright &copy; 2026 KNH Digital LLC. All rights reserved.
-  </div>
+</div>
+
+<!-- NOT SURE -->
+<div class="px" style="padding-bottom: 90px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 30px 34px; background: #F5F5F6; border-radius: 8px; border-left: 4px solid var(--accent); flex-wrap: wrap;">
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #12151B; flex: 1; min-width: 220px;">
+<strong>Not sure which fits?</strong> Book a free 20-minute call and we'll figure it out together.
+</p>
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--accent); color: #FFFFFF;">Book a free 20-minute call</a>
+</div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<div id="work" class="px" style="background: var(--ink); padding-top: 90px; padding-bottom: 90px; display: flex; flex-direction: column; gap: 36px; align-items: center; text-align: center;">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Why Choose Us</div>
+<h2 style="margin: 0; font-size: 34px; font-weight: 800; color: #FFFFFF; max-width: 640px;">We Provide Real Structure For Your Real Deadlines</h2>
+<p style="margin: 0; font-size: 15px; color: rgba(255,255,255,0.6); max-width: 600px; line-height: 1.7;">
+Whether it's a system migration, a website build, or a set of runbooks, our approach is the
+same: scope it, schedule it, run it, report on it.
+</p>
+</div>
+<div class="why-row">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+<div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 15px; font-weight: 800;">PMP</div>
+<div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Certified PM</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+<div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 14px; font-weight: 800;">SCRUM</div>
+<div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Agile Delivery</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+<div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 13px; font-weight: 800;">ITIL 4</div>
+<div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Service Mgmt</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+<div style="width: 84px; height: 84px; border-radius: 50%; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 12px; font-weight: 800;">SEC+</div>
+<div style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.7);">Security</div>
+</div>
+</div>
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--accent); color: #FFFFFF;">Book a free 20-minute call</a>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="px" style="padding-top: 90px; padding-bottom: 90px; display: flex; flex-direction: column; gap: 40px; align-items: center;">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase;">Clients Feedback</div>
+<h2 style="margin: 0; font-size: 32px; font-weight: 800;">Our Clients Reviews</h2>
+</div>
+<div class="test-grid">
+<div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
+<div style="display: flex; align-items: center; gap: 12px;">
+<div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
+<div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
+</div>
+</div>
+</div>
+<div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
+<div style="display: flex; align-items: center; gap: 12px;">
+<div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
+<div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
+</div>
+</div>
+</div>
+<div style="padding: 30px; background: #F5F5F6; border-radius: 8px; display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: #5B6572;">[Client testimonial goes here once the engagement is complete.]</p>
+<div style="display: flex; align-items: center; gap: 12px;">
+<div style="width: 40px; height: 40px; border-radius: 50%; background: #E2E4E8;"></div>
+<div>
+<div style="font-weight: 700; font-size: 14px;">[Client Name]</div>
+<div style="font-size: 12.5px; color: #8A8F97;">[Company / Role]</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CTA -->
+<div id="contact" class="cta-row">
+<div style="max-width: 560px; display: flex; flex-direction: column; gap: 10px;">
+<h2 style="margin: 0; font-size: 30px; font-weight: 800; color: #FFFFFF;">Still deciding? Get a free consultation.</h2>
+<p style="margin: 0; font-size: 15px; color: rgba(255,255,255,0.85);">Tell us about the project you need managed &mdash; no obligation. Prefer email? Write to <a href="mailto:info@knhdigital.com" style="text-decoration: underline;">info@knhdigital.com</a>.</p>
+</div>
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--ink); color: #FFFFFF;">Book a free 20-minute call</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer-grid">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 320px;">
+<div style="display: flex; align-items: center; gap: 10px;">
+<svg width="24" height="24" viewBox="0 0 120 120" fill="none">
+<path d="M4 30 L4 4 L30 4" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M116 30 L116 4 L90 4" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M4 90 L4 116 L30 116" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="86" y="86" width="30" height="30" rx="8" fill="var(--accent)"/>
+</svg>
+<div style="font-size: 17px; font-weight: 800; color: #FFFFFF;">KNH DIGITAL</div>
+</div>
+<p style="margin: 0; font-size: 13.5px; color: rgba(255,255,255,0.55); line-height: 1.6;">A managed-delivery partner that knows how to ship your project on time.</p>
+<div style="display: flex; gap: 10px; margin-top: 4px;">
+<a href="#" style="width: 34px; height: 34px; border-radius: 6px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M12 2.2c2.7 0 3 0 4.1.06 1 .05 1.6.22 2 .37.5.2.9.44 1.3.83.4.4.63.8.83 1.3.15.4.32 1 .37 2 .05 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.05 1-.22 1.6-.37 2a3.5 3.5 0 0 1-.83 1.3 3.5 3.5 0 0 1-1.3.83c-.4.15-1 .32-2 .37-1.1.05-1.4.06-4.1.06s-3 0-4.1-.06c-1-.05-1.6-.22-2-.37a3.5 3.5 0 0 1-1.3-.83 3.5 3.5 0 0 1-.83-1.3c-.15-.4-.32-1-.37-2C2.2 15 2.2 14.7 2.2 12s0-3 .06-4.1c.05-1 .22-1.6.37-2 .2-.5.44-.9.83-1.3.4-.4.8-.63 1.3-.83.4-.15 1-.32 2-.37C7.9 2.2 8.2 2.2 12 2.2zm0 1.8c-2.6 0-2.9 0-4 .06-.8.04-1.3.17-1.6.28-.4.16-.68.34-.97.63-.3.3-.47.57-.63.97-.1.3-.24.8-.28 1.6-.06 1.1-.06 1.4-.06 4s0 2.9.06 4c.04.8.17 1.3.28 1.6.16.4.34.68.63.97.3.3.57.47.97.63.3.1.8.24 1.6.28 1.1.06 1.4.06 4 .06s2.9 0 4-.06c.8-.04 1.3-.17 1.6-.28.4-.16.68-.34.97-.63.3-.3.47-.57.63-.97.1-.3.24-.8.28-1.6.06-1.1.06-1.4.06-4s0-2.9-.06-4c-.04-.8-.17-1.3-.28-1.6a2.6 2.6 0 0 0-.63-.97 2.6 2.6 0 0 0-.97-.63c-.3-.1-.8-.24-1.6-.28-1.1-.06-1.4-.06-4-.06zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.4-2.7a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/></svg>
+</a>
+<a href="#" style="width: 34px; height: 34px; border-radius: 6px; background: var(--accent); display: flex; align-items: center; justify-content: center;">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9.5 9H13v1.7h.06c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.6V21h-4v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21h-4z"/></svg>
+</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="font-size: 15px; font-weight: 700; color: #FFFFFF;">Quick Links</div>
+<div style="width: 24px; height: 2px; background: var(--accent);"></div>
+<a href="#about" style="font-size: 14px; color: rgba(255,255,255,0.6);">About Us</a>
+<a href="#services" style="font-size: 14px; color: rgba(255,255,255,0.6);">Services</a>
+<a href="#contact" style="font-size: 14px; color: rgba(255,255,255,0.6);">Contact</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 280px;">
+<div style="font-size: 15px; font-weight: 700; color: #FFFFFF;">Get Consultation</div>
+<div style="width: 24px; height: 2px; background: var(--accent);"></div>
+<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0aTAdLFMNzjC7nQGmzcZW7BBJqGs8sLh_er4D0ONBrsWXcedmAl6_Cfrn2PTjen2__XMbPl0Al" target="_blank" rel="noopener" class="btn" style="background: var(--accent); color: #FFFFFF; width: fit-content;">Book a free call</a>
+<div style="font-size: 13px; color: rgba(255,255,255,0.5);">info@knhdigital.com &middot; (703) 953-6820</div>
+<div style="font-size: 13px; color: rgba(255,255,255,0.5);">KNH Digital LLC &middot; Arlington, VA</div>
+</div>
+</div>
+<div style="padding: 20px 24px; background: #12151B; text-align: center; font-size: 12.5px; color: rgba(255,255,255,0.4);">
+Copyright &copy; 2026 KNH Digital LLC. All rights reserved.
+</div>
 
 </div>
 </body>
