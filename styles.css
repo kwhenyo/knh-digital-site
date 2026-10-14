@@ -172,3 +172,22 @@ tbody th{white-space:normal}
 .nav-right{display:none}
 .brand-tag{display:none}
 }
+
+/* work page */
+.case{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-bottom:48px}
+.case-img img,.thumb{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.case-body h2{margin:6px 0 10px;font-size:30px}
+.case-body h3{font-size:18px;margin:18px 0 6px}
+.quote{margin:20px 0;padding:16px 20px;border-left:4px solid var(--accent);background:var(--soft);border-radius:6px}
+.quote p{margin:0 0 8px;font-size:17px;font-style:italic}
+.quote footer{font-size:14px;color:var(--muted)}
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.work-grid .more{margin-top:8px}
+.work-grid .thumb{margin-bottom:6px}
+.band-soft{background:var(--soft)}
+.lede-dark{color:var(--muted);max-width:680px;margin:-12px auto 28px}
+.sample-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.sample-grid figure{margin:0;background:#FFFFFF;border:1px solid var(--line);border-radius:10px;padding:12px}
+.sample-grid img{width:100%;height:auto;display:block;border-radius:6px}
+.sample-grid figcaption{font-size:14px;margin-top:10px;color:var(--ink-2)}
+@media (max-width:900px){.case,.work-grid,.sample-grid{grid-template-columns:1fr}.case-body h2{font-size:24px}}
