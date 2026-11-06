@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | KNH Digital</title>
-<meta name="description" content="Contact KNH Digital about a website, IT project, migration, or documentation need. Arlington, VA. (571) 586-1581.">
+<meta name="description" content="Contact KNH Digital about a website, IT project, migration, documentation, or AI policy need. Arlington, VA. (571) 586-1581.">
 <link rel="canonical" href="https://knhdigital.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KNH Digital">
 <meta property="og:url" content="https://knhdigital.com/contact.html">
 <meta property="og:title" content="Contact | KNH Digital">
-<meta property="og:description" content="Contact KNH Digital about a website, IT project, migration, or documentation need. Arlington, VA. (571) 586-1581.">
+<meta property="og:description" content="Contact KNH Digital about a website, IT project, migration, documentation, or AI policy need. Arlington, VA. (571) 586-1581.">
 <meta property="og:image" content="https://knhdigital.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -55,13 +55,14 @@
 <input type="hidden" name="_subject" value="New inquiry from knhdigital.com">
 <div class="hp" aria-hidden="true"><label for="f-gotcha">Leave this field empty</label><input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
 <div class="field"><label for="f-name">Name <span aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-<div class="field"><label for="f-org">Organization</label><input id="f-org" name="organization" type="text" autocomplete="organization"></div>
 <div class="field"><label for="f-email">Email <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
 <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
-<div class="field"><label for="f-svc">Service of interest</label><select id="f-svc" name="service"><option value="">Choose one (optional)</option><option>Website Design & Development</option><option>IT Project Management & PMO Support</option><option>IT Migration & Upgrade Management</option><option>Process & Documentation</option><option>AI Governance & Policy</option><option>Not sure yet</option></select></div>
-<div class="field"><label for="f-msg">Message <span aria-hidden="true">*</span></label><textarea id="f-msg" name="message" rows="6" required></textarea></div>
+<div class="field"><label for="f-org">Organization</label><input id="f-org" name="organization" type="text" autocomplete="organization"></div>
+<div class="field"><label for="f-svc">Service of interest</label><select id="f-svc" name="service"><option value="">Choose one (optional)</option><option>Website Design &amp; Development</option><option>IT Project Management &amp; PMO Support</option><option>IT Migration &amp; Upgrade Management</option><option>Process &amp; Documentation</option><option>AI Governance &amp; Policy</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="f-msg">Message <span aria-hidden="true">*</span></label><textarea id="f-msg" name="message" rows="6" placeholder="Tell us a bit about what you need help with." required></textarea></div>
 <p class="req-note"><span aria-hidden="true">*</span> Required</p>
 <button class="btn btn-accent" type="submit">Send Message</button>
+<p class="req-note">We reply within two business days. Your information is never shared.</p>
 <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
 </form>
 <aside class="contact-side">
@@ -92,7 +93,7 @@ window.location.href='mailto:info@knhdigital.com?subject='+encodeURIComponent('I
 s.textContent='Opening your email app to send this message.';return;}
 d.set('_replyto',d.get('email'));
 fetch(f.action,{method:'POST',body:d,headers:{'Accept':'application/json'}}).then(function(r){
-if(r.ok){f.reset();s.textContent='Thank you! Your message was sent. We will reply within two business days.';}
+if(r.ok){f.reset();s.textContent='Thank you! Your message was sent. We will reply within two business days. Want to talk sooner? ';var a=document.createElement('a');a.href=document.querySelector('.contact-side a.btn').href;a.target='_blank';a.rel='noopener';a.textContent='Book a free 20-minute consultation.';s.appendChild(a);}
 else{s.textContent='Sorry, something went wrong. Please email info@knhdigital.com.';}
 }).catch(function(){s.textContent='Sorry, something went wrong. Please email info@knhdigital.com.';});
 });

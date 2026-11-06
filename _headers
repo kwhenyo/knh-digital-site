@@ -5,7 +5,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
   Cross-Origin-Opener-Policy: same-origin
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-59GEJU8gkoUX7ZddIsGUieRF1M4lcVaffqaXPkHcDNs=' 'sha256-r3AIcz03J4l4zYdMhtIOAus3Tp195TEDYTveuqy2s5g='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io mailto:; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-59GEJU8gkoUX7ZddIsGUieRF1M4lcVaffqaXPkHcDNs=' 'sha256-r3AIcz03J4l4zYdMhtIOAus3Tp195TEDYTveuqy2s5g=' 'sha256-Hrc0SpnR/c7xUgcdO0FPwfmlIk+TK73YfsYOwE5j/xk='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io mailto:; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
 
 /.git/*
   X-Robots-Tag: noindex
